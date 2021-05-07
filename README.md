@@ -1,6 +1,6 @@
 <div align="center">
 
-# React Book search 👩‍💻
+# React Book Search 📚
 ![GitHub license](https://img.shields.io/badge/License-MIT-red)
 
 #### 📍 [View Deployment on Heroku](path) 📍
@@ -18,7 +18,7 @@
 
 ## *Description*
 
-This web app uses the MERN stack to allow a user to search, save and remove saved books using data pulled from the Google Books API.
+This application uses the MERN stack to allow a user to search, save and remove saved books using data from the Google Books API.
 
 ## *Installation*
 
