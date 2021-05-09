@@ -31,7 +31,7 @@ class Result extends Component {
   };
 
   onClickSave = () => {
-    this.props.saveGoogleBook(this.props);
+    this.props.saveBookToDB(this.props);
     this.setSave();
   };
 

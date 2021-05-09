@@ -21,7 +21,7 @@ class Results extends Component {
             : 'https://via.placeholder.com/100x100?text=No+Image+Available'
         }
         description={book.volumeInfo.description}
-        saveGoogleBook={this.props.saveGoogleBook}
+        saveBookToDB={this.props.saveBookToDB}
       />
     ));
   }
