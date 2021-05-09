@@ -17,7 +17,7 @@ class Home extends Component {
           search: '',
         });
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.log('ERR ==>', err));
   };
 
   handleInputChange = (event) => {
