@@ -37,7 +37,7 @@ class Home extends Component {
     this.setState({ books: [], search: '' });
   };
 
-  saveGoogleBook = (currentBook) => {
+  saveBookToDB = (currentBook) => {
     console.log('CURRENT BOOK ==>', currentBook);
     API.saveBook({
       id: currentBook.id,
@@ -92,7 +92,7 @@ class Home extends Component {
             {this.state.books.length ? (
               <Results
                 bookState={this.state.books}
-                saveGoogleBook={this.saveGoogleBook}
+                saveBookToDB={this.saveBookToDB}
               ></Results>
             ) : (
               <div>
