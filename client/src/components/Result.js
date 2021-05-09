@@ -17,7 +17,7 @@ class Result extends Component {
   setSave = () => {
     if (this.state.text === 'Save') {
       this.setState({
-        bgColor: '#b6c1cf',
+        bgColor: 'goldenrod',
         color: 'white',
         text: 'Saved',
       });
@@ -73,6 +73,8 @@ class Result extends Component {
               style={{
                 backgroundColor: this.state.bgColor,
                 color: this.state.color,
+                marginLeft: '0.5rem',
+                border: '1px solid #141414'
               }}
               className="btn"
             >
