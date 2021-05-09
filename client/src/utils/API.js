@@ -1,6 +1,7 @@
+/* eslint-disable import/no-anonymous-default-export */
 import axios from 'axios';
 
-const API = {
+export default {
   // Retrieves Google books
   googleBooks: function (query) {
     return axios.get(`https://www.googleapis.com/books/v1/volumes?q=${query}`);
@@ -23,4 +24,3 @@ const API = {
   },
 };
 
-export default API;
