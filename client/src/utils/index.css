@@ -5,7 +5,6 @@
   }
   
   .container {
-    max-width: 800px;
     margin-top: 3rem;
     margin-bottom: 1rem;
     display: flex;
@@ -20,7 +19,7 @@
   }
   
   .material-icons.fill {
-    color: #a0aab8;
+    color: goldenrod;
   }
 
   
@@ -28,7 +27,7 @@
     color: #141414;
   }
   a:hover {
-    color: #a0aab8;
+    color: goldenrod;
   }
   
   hr {
@@ -46,16 +45,16 @@
     border-color: #141414;
   }
   .btn-primary:hover {
-    color: #a0aab8;
+    color: goldenrod;
     background-color: transparent;
     border-color: #141414;
   }
   .btn-primary:focus,
   .btn-primary.focus {
-    color: #a0aab8;
+    color: goldenrod;
     background-color: transparent;
     border-color: #141414;
-    box-shadow: 0 0 0 0.2rem #a0aab8;
+    box-shadow: none;
   }
   .btn-primary.disabled,
   .btn-primary:disabled {
@@ -73,5 +72,5 @@
   .btn-primary:not(:disabled):not(.disabled):active:focus,
   .btn-primary:not(:disabled):not(.disabled).active:focus,
   .show > .btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem #a0aab8;
+    box-shadow: none;
   }
