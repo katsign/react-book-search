@@ -7,10 +7,7 @@ function Save(props) {
           <div>
             <h5 className="card-title">{title}</h5>
             <small>
-              <span className="material-icons" style={{ fontSize: '20px' }}>
-                menu_book
-              </span>
-              {authors}
+              <span className="material-icons" style={{ fontSize: '20px' }}>menu_book</span> {authors}
             </small>
           </div>
           <img src={image} style={{ maxWidth: '100px' }} alt="book" />
