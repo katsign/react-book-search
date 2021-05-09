@@ -25,6 +25,7 @@
   
   a {
     color: #141414;
+    text-decoration: none;
   }
   a:hover {
     color: goldenrod;
