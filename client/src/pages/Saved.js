@@ -15,7 +15,6 @@ class Saved extends Component {
   deleteSavedBook = (currentBook) => {
     API.deleteBook(currentBook.id)
       .then((res) => {
-        console.log('Deleted ==>', res);
         this.getBooks();
       })
       .catch((err) => {
@@ -29,7 +28,6 @@ class Saved extends Component {
         this.setState({
           savedBooks: res.data,
         });
-        console.log('getBooks RES DATA ==>', res);
       })
       .catch((err) => {
         console.log('ERR ==>', err);

@@ -12,7 +12,6 @@ class Home extends Component {
   searchBooks = () => {
     API.googleBooks(this.state.search)
       .then((res) => {
-        console.log('RES.DATA ==>', res.data.items);
         this.setState({
           books: res.data.items,
           search: '',
@@ -39,7 +38,6 @@ class Home extends Component {
   };
 
   saveBookToDB = (currentBook) => {
-    console.log('CURRENT BOOK ==>', currentBook);
     API.saveBook({
       id: currentBook.id,
       title: currentBook.title,
@@ -48,7 +46,7 @@ class Home extends Component {
       image: currentBook.image,
       link: currentBook.link,
     })
-      .then((res) => console.log('Successful POST to DB!', res))
+      .then((res) => console.log('Successful POST to DB!'))
       .catch((err) => console.log('ERR ==>', err));
   };
 

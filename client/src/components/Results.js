@@ -3,7 +3,6 @@ import Result from './Result';
 
 class Results extends Component {
   render() {
-    console.log('PROPS ==>', this.props.bookState);
     return this.props.bookState.map((book) => (
       <Result
         key={book.id}

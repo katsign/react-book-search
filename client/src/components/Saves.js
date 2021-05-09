@@ -3,7 +3,6 @@ import Save from './Save';
 
 class Saves extends Component {
   render() {
-    console.log('PROPS ==>', this.props.bookState);
     return this.props.bookState.map((book) => (
         <Save
           key={book._id}
