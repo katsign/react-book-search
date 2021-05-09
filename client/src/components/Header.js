@@ -5,7 +5,7 @@ function Header() {
     <>
       <nav className="navbar navbar-light justify-content-between">
         <a className="navbar-brand" href="/">
-          Home
+          Search
         </a>
         <a className="navbar-brand" href="/saved">
           Saved Books
