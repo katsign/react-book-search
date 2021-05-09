@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import API from '../utils/API';
 import Results from '../components/Results';
+import Footer from '../components/Footer';
 
 class Home extends Component {
   state = {
@@ -53,56 +54,55 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="container">
-        <div className="row" style={{ margin: 'auto' }}>
-          <div className="col-xs-12">
-            <h4>Google Books Search 📚</h4>
-            <div className="d-flex flex-row align-items-center mb-2">
-              <form>
-                <div className="input-group">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Twilight"
-                    aria-label="search"
-                    aria-describedby="searchBtn"
-                    name="search"
-                    onChange={this.handleInputChange}
-                    value={this.state.search}
-                  />
-                  <button
-                    onClick={this.handleFormSubmit}
-                    className="btn btn-primary"
-                    type="submit"
-                    id="searchBtn"
-                  >
-                    Search
-                  </button>
-                </div>
-              </form>
+      <>
+        
+        <div className="d-flex flex-row align-items-baseline justify-content-center mb-4">
+          <form>
+            <div className="input-group">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Twilight"
+                aria-label="search"
+                aria-describedby="searchBtn"
+                name="search"
+                onChange={this.handleInputChange}
+                value={this.state.search}
+              />
               <button
-                onClick={this.handleClear}
-                style={{ marginLeft: '0.5rem' }}
+                onClick={this.handleFormSubmit}
                 className="btn btn-primary"
+                type="submit"
+                id="searchBtn"
               >
-                Clear
+                Search
               </button>
             </div>
-
-            {this.state.books.length ? (
-              <Results
-                bookState={this.state.books}
-                saveBookToDB={this.saveBookToDB}
-              ></Results>
-            ) : (
-              <div>
-                <hr />
-                <p className="lead">No Results to Display</p>
-              </div>
-            )}
-          </div>
+          </form>
+          <button
+            onClick={this.handleClear}
+            style={{ marginLeft: '0.5rem' }}
+            className="btn btn-primary"
+          >
+            Clear
+          </button>
         </div>
-      </div>
+
+        {this.state.books.length ? (
+          <div>
+            <Results
+              bookState={this.state.books}
+              saveBookToDB={this.saveBookToDB}
+            ></Results>
+            <Footer />
+          </div>
+        ) : (
+          <div>
+            <hr />
+            <p className="lead">No Results to Display</p>
+          </div>
+        )}
+      </>
     );
   }
 }
