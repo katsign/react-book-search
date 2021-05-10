@@ -12,6 +12,9 @@
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
   },
+  "engines": {
+    "node": "16.1.0"
+},
   "author": "katsign",
   "license": "MIT",
   "devDependencies": {
