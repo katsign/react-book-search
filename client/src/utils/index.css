@@ -75,3 +75,9 @@
   .show > .btn-primary.dropdown-toggle:focus {
     box-shadow: none;
   }
+
+  @media (max-width: 400px) {
+    input {
+      width: 122px!important;
+    }
+  }

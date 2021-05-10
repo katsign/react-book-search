@@ -37,6 +37,7 @@ class Saved extends Component {
   render() {
     return (
       <div>
+        <hr />
         <h4><span className="material-icons">bookmark</span>Saved</h4>
         {this.state.savedBooks.length ? (
           <div>
