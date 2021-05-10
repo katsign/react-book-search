@@ -19,8 +19,10 @@ app.use(routes);
 var MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/googlebooks';
 
 mongoose.connect(MONGODB_URI, {
-  useUnifiedTopology: true,
   useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+  useFindAndModify: false,
 });
 
 // Start the API server
