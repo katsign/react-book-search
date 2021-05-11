@@ -3,7 +3,7 @@
 # React Book Search 📚
 ![GitHub license](https://img.shields.io/badge/License-MIT-red)
 
-#### 📍 [View Deployment on Heroku](path) 📍
+#### 📍 [View Deployment on Heroku](https://katsign-book-search.herokuapp.com/) 📍
 
 ### Search, save and remove saved books from a reading list.
 </div>
