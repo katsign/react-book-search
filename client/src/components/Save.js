@@ -20,7 +20,7 @@ function Save(props) {
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-primary"
+            className="btn btn-outline-primary"
           >
             View Book
           </a>

@@ -69,7 +69,7 @@ class Home extends Component {
               />
               <button
                 onClick={this.handleFormSubmit}
-                className="btn btn-primary"
+                className="btn btn-outline-primary"
                 type="submit"
                 id="searchBtn"
               >
@@ -80,7 +80,7 @@ class Home extends Component {
           <button
             onClick={this.handleClear}
             style={{ marginLeft: '0.5rem' }}
-            className="btn btn-primary"
+            className="btn btn-outline-danger"
           >
             Clear
           </button>

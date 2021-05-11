@@ -17,7 +17,7 @@ class Result extends Component {
   setSave = () => {
     if (this.state.text === 'Save') {
       this.setState({
-        bgColor: 'goldenrod',
+        bgColor: 'green',
         color: 'white',
         text: 'Saved',
       });
@@ -64,7 +64,7 @@ class Result extends Component {
               href={this.props.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-primary"
+              className="btn btn-outline-primary"
             >
               View Book
             </a>
@@ -74,9 +74,8 @@ class Result extends Component {
                 backgroundColor: this.state.bgColor,
                 color: this.state.color,
                 marginLeft: '0.5rem',
-                border: '1px solid #141414'
               }}
-              className="btn"
+              className="btn btn-outline-success"
             >
               {this.state.text}
             </button>
